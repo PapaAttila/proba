@@ -1,0 +1,9 @@
+#profile-pic{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: auto;
+}
+.row > div{
+    padding: 20px;
+}
