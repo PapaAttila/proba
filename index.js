@@ -15,8 +15,21 @@ async function mehet(){
     
     await app.get("/", async (req, res) => {
         const response_img = "";
+        const name = "Santa Maria";
         async function aha() {
             this.response_img = await fetch('https://picsum.photos/1920/1080');
+            this.name_src = await fetch('https://randomuser.me/api/');
+            $.ajax({
+                url: 'https://randomuser.me/api/',
+                dataType: 'json',
+                success: function(data) {
+                  console.log(data);
+                }
+              });
+                    
+            this.name = this.name_src.body
+            console.log(this.name)
+
             //const body = await response.text();
 
             console.log(this.response_img.url);
